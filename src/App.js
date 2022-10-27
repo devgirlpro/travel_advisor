@@ -9,12 +9,18 @@ import PlaceDetails from './components/PlaceDetails/PlaceDetails';
 
 const App = () => {
   return (
-    <>
+    <React.Fragment>
+    <CssBaseline />
      <Header />
-     <List />
-     <Map />
-     <PlaceDetails />
-    </>
+     <Grid container spacing={3} style={{ width:'100%' }} >
+      <Grid item xs={12} md={4} >
+        <List />
+      </Grid>
+      <Grid  item sx={12} md={8} >
+        <Map />
+      </Grid>
+     </Grid>
+    </React.Fragment>
   );
 }
 
