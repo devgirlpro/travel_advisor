@@ -7,6 +7,9 @@ export default makeStyles((theme) => ({
       display: 'block',
     },
   },
+  boxContainer: {
+    display: 'flex', justifyContent: 'space-between',
+  },
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,

@@ -5,7 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 import useStyles from './styles.js';
 
-const Header = ({ onPlaceChanged, onLoad }) => {
+const Header = () => {
   const classes = useStyles();
 
   return (
@@ -14,7 +14,7 @@ const Header = ({ onPlaceChanged, onLoad }) => {
         <Typography variant="h5" className={classes.title}>
           Travel Advisor
         </Typography>
-        <Box display="flex">
+        <Box  className={classes.boxContainer}>
           <Typography variant="h6" className={classes.title}>
             Explore new places
           </Typography>
